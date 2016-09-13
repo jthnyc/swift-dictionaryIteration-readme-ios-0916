@@ -17,11 +17,11 @@ if let airport = airports["JFK"] {
 }
 
 for (key, value) in airports {
-    print("The abbreviation for \(value) is \(key)")
+    print ("The abbreviation for \(value) is \(key)")
 }
 
 for (airportCode, airportName) in airports {
-    print("The abbreviation for \(airportName) is \(airportCode)")
+    print ("The abbreviation for \(airportName) is \(airportCode)")
 }
 
 
@@ -61,7 +61,7 @@ let fastAndFuriousFilms = [
     "Fast 8"
 ]
 
-let movies = [
+var movies = [
     "Star Wars": starWarsFilms,
     "Fast & Furious": fastAndFuriousFilms,
     "Toy Story": toyStoryFilms,
@@ -69,4 +69,23 @@ let movies = [
 
 for (franchise, titles) in movies {
     print("There are \(titles.count) movies in the \(franchise) series")
+}
+
+
+
+let harryPotterFilms = [
+    "Philosopher's Stone",
+    "Chamber of Secrets",
+    "Prisoner of Azkaban",
+    "Goblet of Fire",
+    "Order of the Phoenix",
+    "Half Blood Prince",
+    "Deathly Hallows",
+]
+
+movies["Harry Potter"] = harryPotterFilms
+print(movies)
+
+for (franchise, titles) in movies {
+    print ("There are \(titles.count) movies in the \(franchise) series")
 }
